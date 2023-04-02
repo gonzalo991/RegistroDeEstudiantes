@@ -1,13 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
 package com.crud.estudiantes.app.servicios;
 
-/**
- *
- * @author gonxa
- */
+import com.crud.estudiantes.app.entidades.Estudiante;
+import java.util.List;
+
+//Se crea la interfaz enargada de los métodos abstractos que
+//se van a utilizar en nuestra aplicación
 public interface IEstudianteServicio {
+    
+    public List<Estudiante> listarTodosLosEstudiantes();
     
 }

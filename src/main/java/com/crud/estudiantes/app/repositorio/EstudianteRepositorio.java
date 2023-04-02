@@ -1,13 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
 package com.crud.estudiantes.app.repositorio;
 
-/**
- *
- * @author gonxa
- */
-public interface EstudianteRepositorio {
+import com.crud.estudiantes.app.entidades.Estudiante;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+//Indicamos con la anotación Repository que este es un repositorio de jpa
+// y hacemos que herede de JpaRepository<Clase, tipo de dato de id>
+@Repository
+public interface EstudianteRepositorio extends JpaRepository<Estudiante, Long> {
     
 }
