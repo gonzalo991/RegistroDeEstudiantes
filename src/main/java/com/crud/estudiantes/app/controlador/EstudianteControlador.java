@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class EstudianteControlador {
 
     //Hacemos la inyección de dependencia, en este caso del servicio
+    //Se inyecta la interfaz ya que spring automaticamente
+    //al ver el método listarTodosLosEstudiantes, lo buscará en el servicio
     @Autowired
     private IEstudianteServicio estudianteServicio;
 
